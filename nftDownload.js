@@ -2,8 +2,7 @@ import fetch from 'cross-fetch';
 
 const download = function (data) {
 
-    // Creating a Blob for having a csv file format
-    // and passing the data with type
+    // Create a blob, passing the data with type
     const blob = new Blob([data], { type: 'text/csv' });
 
     // Creating an object for downloading url
